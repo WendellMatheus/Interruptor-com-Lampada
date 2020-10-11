@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lâmpada com button</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <img src="ON.jpg" alt="Lâmpada" id="lampadaligada"><br><br>
 
-    <button id="OFF" onclick="apagar()">Apagar</button>
-    <button id="ON" onclick="acender()">Acender</button>
+<body>
+    <section class="container">
+        <div class="box-container">
+
+            <header>
+                <img src="ON.jpg" alt="Lâmpada" id="lampadaligada">
+            </header>
+
+            <main>
+                <div class="buttons-container"> 
+                <button class="btn-on" id="ON" onclick="acender()">ON</button>
+                <button class="btn-off" id="OFF" onclick="apagar()">OFF</button>
+            </div>
+            </main>
+
+        </div>
+
+
+    </section>
+
 
     <script src="ambiente.js"></script>
-    </body>
+</body>
+
 </html>
